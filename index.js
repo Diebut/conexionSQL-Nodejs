@@ -30,7 +30,7 @@ const insertUser = async ()=>{
         console.log(e);
     }
     
-}
+};
 
 const deleteUser = async () =>{
     try {
@@ -40,8 +40,18 @@ const deleteUser = async () =>{
         console.log(res);
 
     } catch (e) {
-        console.log(e)
+        console.log(e);
     }
-}
+};
+
+const editUser = async ()=>{
+
+    try {
+        const text = 'UPDATE users SET username = $1 WHERE username = $2';
+        
+    } catch (e) {
+        console.log(e);
+    }
+};
 
 deleteUser();
