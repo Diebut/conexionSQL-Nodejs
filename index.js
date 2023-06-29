@@ -9,5 +9,6 @@ const config = {
 const pool = new Pool(config);
 
 const getLibros = ()=>{
-    console.log('Obteniendo libros')
-}
+    pool.query('select * from libros');
+};
+getLibros();
