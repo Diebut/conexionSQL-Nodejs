@@ -1,0 +1,20 @@
+{
+  "name": "ConexionSQL-Postgres",
+  "version": "1.0.0",
+  "description": "---\r ## seguimos en los primeros pasos de las practicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diebut/conexionSQL-Nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diebut/conexionSQL-Nodejs/issues"
+  },
+  "homepage": "https://github.com/Diebut/conexionSQL-Nodejs#readme"
+}
