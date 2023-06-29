@@ -6,4 +6,8 @@ const config = {
     password: 'zxc123',
     database: 'libreria'
 }
-new Pool(config);
+const pool = new Pool(config);
+
+const getLibros = ()=>{
+    console.log('Obteniendo libros')
+}
