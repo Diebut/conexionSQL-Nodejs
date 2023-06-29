@@ -33,7 +33,15 @@ const insertUser = async ()=>{
 }
 
 const deleteUser = async () =>{
-    
+    try {
+        const text = 'DELETE FROM users WHERE username = $1';
+        const value =['joe'];
+        const res = await pool.query(text, value);
+        console.log(res);
+
+    } catch (e) {
+        console.log(e)
+    }
 }
 
-insertUser();
+deleteUser();
