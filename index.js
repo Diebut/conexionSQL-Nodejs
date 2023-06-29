@@ -47,11 +47,14 @@ const deleteUser = async () =>{
 const editUser = async ()=>{
 
     try {
-        const text = 'UPDATE users SET username = $1 WHERE username = $2';
+        const text = 'UPDATE users SET username = $1, password = $2 WHERE username = $3';
+        const values = ['Bruce', 'bruce123', 'diego'];
+        const res = await pool.query(text, values);
+        console.log(res);
         
     } catch (e) {
         console.log(e);
     }
 };
 
-deleteUser();
+editUser();
