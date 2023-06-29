@@ -9,7 +9,12 @@ const config = {
 const pool = new Pool(config);
 
 const getLibros = async ()=>{
-    const res = await pool.query('select * from libros');
-    console.log(res.rows);
+    try {
+        const res = await pool.query('select * from libros');
+        console.log(res.rows);
+        pool.end();
+    } catch (e) {
+        console.log(e);
+    }
 };
 getLibros();
