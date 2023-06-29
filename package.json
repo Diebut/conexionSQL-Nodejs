@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Diebut/conexionSQL-Nodejs/issues"
   },
-  "homepage": "https://github.com/Diebut/conexionSQL-Nodejs#readme"
+  "homepage": "https://github.com/Diebut/conexionSQL-Nodejs#readme",
+  "dependencies": {
+    "pg": "^8.11.1"
+  }
 }
