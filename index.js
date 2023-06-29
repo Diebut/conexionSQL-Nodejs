@@ -8,7 +8,8 @@ const config = {
 }
 const pool = new Pool(config);
 
-const getLibros = ()=>{
-    pool.query('select * from libros');
+const getLibros = async ()=>{
+    const res = await pool.query('select * from libros');
+    console.log(res.rows);
 };
 getLibros();
