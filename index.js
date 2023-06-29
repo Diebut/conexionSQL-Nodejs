@@ -17,4 +17,14 @@ const getLibros = async ()=>{
         console.log(e);
     }
 };
-getLibros();
+const insertUser = async ()=>{
+
+    const text = 'INSERT INTO users (username, password) VALUES ($1, $2)'
+    const values =['diego', 'die123']
+
+    const res = await pool.query(text, values);
+    console.log(res);
+    pool.end();
+}
+
+insertUser();
