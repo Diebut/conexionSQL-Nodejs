@@ -32,4 +32,8 @@ const insertUser = async ()=>{
     
 }
 
+const deleteUser = async () =>{
+    
+}
+
 insertUser();
