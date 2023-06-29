@@ -1,8 +1,9 @@
 const {Pool} = require('pg');
 
-new Pool({
+const config = {
     user: 'postgres',
     host: 'localhost',
     password: 'zxc123',
     database: 'libreria'
-});
+}
+new Pool(config);
